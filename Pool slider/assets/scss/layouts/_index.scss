@@ -1,0 +1,333 @@
+.top-area {
+    background: url(../images/banner.png) no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    @include max(1500px) {
+        background-size: cover;
+    }
+    @include max(992px) {
+        height: auto;
+    }
+    .t-text {
+        padding: 8rem 0 6rem;
+        @include max(767px) {
+            padding: 4rem 0 4rem;
+        }
+        h1 {
+            font-size: 60px;
+            line-height: 75px;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 30px;
+            position: relative;
+            z-index: 1;
+            @include max(1280px) {
+                font-size: 45px;
+                line-height: 55px;
+                margin: 0 0 15px;
+            }
+            @include max(767px) {
+                font-size: 35px;
+                line-height: 45px;
+                margin: 0 0 10px;
+            }
+            @include max(575px) {
+                font-size: 30px;
+                line-height: 35px;
+                margin: 0 0 10px;
+            }
+            &::before {
+                position: absolute;
+                top: -2rem;
+                left: -7rem;
+                right: auto;
+                bottom: 0;
+                content: "";
+                background: url(../images/icon01.png) no-repeat;
+                width: 375px;
+                height: 375px;
+                z-index: -1;
+                background-size: 100%;
+                @include max(1500px) {
+                    top: -3rem;
+                    left: -4rem;
+                    width: 350px;
+                    height: 350px;
+                }
+                @include max(1280px) {
+                    top: -3rem;
+                    left: -2rem;
+                    width: 300px;
+                    height: 300px;
+                }
+                @include max(992px) {
+                    top: -3rem;
+                    left: -2rem;
+                    width: 250px;
+                    height: 250px;
+                }
+                @include max(575px) {
+                    top: -2rem;
+                    left: -1rem;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        p {
+            font-size: 30px;
+            line-height: 32px;
+            color: #fff;
+            margin: 0 0 30px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            @include max(1280px) {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 0 0 20px;
+            }
+            @include max(767px) {
+                font-size: 18px;
+                line-height: 22px;
+                margin: 0 0 15px;
+            }
+            @include max(575px) {
+                font-size: 16px;
+                line-height: 20px;
+                margin: 0 0 10px;
+            }
+        }
+        .c-btn {
+            font-size: 30px;
+            line-height: 32px;
+            padding: 8px 20px 12px;
+            background: #D9000D;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 50px 50px;
+            margin: 2rem 0 0;
+            @include max(1280px) {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 1rem  0 0;
+            }
+            @include max(575px) {
+                font-size: 18px;
+                line-height: 20px;
+                margin: 15px 0 0;
+            }
+        }
+    }
+}
+.about-area {
+    background: #020202;
+    padding: 6rem 0 4rem;
+    @include max(575px) {
+        padding: 2rem 0 2rem;
+    }
+    .t-box {
+        padding: 1rem 0 0 2rem;
+        position: relative;
+        z-index: 1;
+        @include max (992px) {
+            padding: 1rem 0 0;
+        }
+        @include max (767px) {
+            padding: 2rem 0;
+        }
+        &::before {
+            position: absolute;
+            top: -2rem;
+            left: -7rem;
+            right: auto;
+            bottom: 0;
+            content: "";
+            background: url(../images/icon01.png) no-repeat;
+            width: 250px;
+            height: 250px;
+            z-index: -1;
+            background-size: 100%;
+            @include max(992px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        h2 {
+            font-size: 65px;
+            line-height: 67px;
+            color: #fff;
+            font-weight: 700;
+            margin: 0 0 60px;
+            @include max(1280px) {
+                font-size: 45px;
+                line-height: 50px;
+                margin: 0 0 20px;
+            }
+            @include max(575px) {
+                font-size: 35px;
+                line-height: 40px;
+                margin: 0 0 15px;
+            }
+        }
+        p {
+            font-size: 25px;
+            line-height: 30px;
+            color: #fff;
+            font-weight: 400;
+            @include max(1280px) {
+                font-size: 20px;
+                line-height: 26px;
+            }
+            @include max(575px) {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+    .img-hold  {
+        position: relative;
+        z-index: 9;
+    }
+}
+.c-area {
+    background: #020202;
+    padding: 0 0 6rem;
+    @include max(575px) {
+        padding: 0 0 2rem;
+    }
+    h2 {
+        font-size: 65px;
+        line-height: 67px;
+        color: #fff;
+        font-weight: 700;
+        margin: 0 0 60px;
+        text-align: center;
+        @include max(1280px) {
+            font-size: 45px;
+            line-height: 50px;
+            margin: 0 0 25px;
+        }
+        @include max(575px) {
+            font-size: 35px;
+            line-height: 40px;
+            margin: 0 0 15px;
+        }
+    }
+}
+.con-area {
+    padding: 0 0 4rem;
+    background: #020202;
+    h2 {
+        font-size: 65px;
+        line-height: 67px;
+        color: #fff;
+        font-weight: 700;
+        margin: 0 0 60px;
+        text-align: center;
+        @include max(1280px) {
+            font-size: 45px;
+            line-height: 50px;
+            margin: 0 0 25px;
+        }
+        @include max(575px) {
+            font-size: 35px;
+            line-height: 40px;
+            margin: 0 0 15px;
+        }
+    }
+    .form-block {
+        label {
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 0 10px;
+        }
+        input {
+            background: #5D5D5D;
+            padding: 10px 10px;
+            border: 0;
+            border-radius: 0;
+        }
+        textarea {
+            background: #5D5D5D;
+            padding: 10px 10px;
+            border: 0;
+            border-radius: 0;
+        }
+        .s-btn {
+            font-size: 28px;
+            line-height: 30px;
+            padding: 8px 20px 12px;
+            background: #D9000D;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 50px 50px;
+            @include max(1280px) {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 1rem  0 0;
+            }
+            @include max(575px) {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+    .info-area {
+        padding: 2rem 0 0;
+        position: relative;
+        z-index: 1;
+        @include max(575px) {
+            padding: 1rem 0 0;
+        }
+        &::before {
+            position: absolute;
+            top: -2rem;
+            right: 3rem;
+            left: 0;
+            bottom: 0;
+            content: "";
+            background: url(../images/icon01.png) no-repeat;
+            width: 200px;
+            height: 200px;
+            z-index: -1;
+            background-size: 100%;
+            margin: 0 auto;
+            @include max(992px) {
+                display: none;
+            }
+        }
+        ul {
+            li {
+                margin: 0 0 35px;
+                font-size: 25px;
+                line-height: 27px;
+                color: #fff;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                @include max(1280px) {
+                    font-size: 20px;
+                    line-height: 22px;
+                    margin: 0 0 25px;
+                }
+                span {
+                    img {
+                        width: 35px;
+                        @include max(575px) {
+                            width: 25px;
+                        }
+                    }
+                }
+                p {
+                    margin: 0 0 0 40px;
+                    @include max(575px) {
+                        margin: 0 0 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
